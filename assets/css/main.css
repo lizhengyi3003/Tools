@@ -1,24 +1,53 @@
 @font-face {
-    font-family: '悄悄喜欢你';
+    font-family: '悄悄喜欢你'; /* 自定义字体 */
     src: url("../fonts/悄悄喜欢你.ttf") format("truetype");
 }
 @font-face {
-    font-family: '小可奶酪体';
+    font-family: '小可奶酪体'; /* 另一种自定义字体 */
     src: url("../fonts/小可奶酪体.ttf") format("truetype");
 }
-.images1 img{
-    width: 100px;
-    height: 100px;
+
+.images1 img {
+    width: 100px; /* 工具图标宽度 */
+    height: 100px; /* 工具图标高度 */
+    display: block; /* 防止图片下方出现空隙 */
+    margin: 0 auto; /* 图片水平居中 */
 }
-body{
-    font-family:"悄悄喜欢你";
-    
+
+body {
+    font-family: '悄悄喜欢你', Arial, sans-serif; /* 设置主字体，增加英文/系统字体兜底 */
+    margin: 0; /* 去除默认外边距 */
+    padding: 0; /* 去除默认内边距 */
+    min-height: 100vh; /* 保证body至少占满一屏 */
+    background: none; /* 避免body和.background冲突 */
 }
-a{
-    text-decoration: none;
+
+a {
+    text-decoration: none; /* 去除链接下划线 */
+    color: inherit; /* 链接颜色继承父元素 */
+    transition: color 0.2s; /* 增加颜色过渡效果 */
 }
-.one{
-    width: 300px;         /* 新增：设置宽度 */
-    margin: 0 auto;       /* 新增：水平居中 */
-    text-align: center;   /* 保留：内容居中 */
+a:hover {
+    color: #0078d4; /* 鼠标悬停时变色，可根据主题调整 */
+}
+
+.one {
+    width: 300px; /* 居中内容宽度 */
+    margin: 0 auto; /* 水平居中 */
+    text-align: center; /* 内容居中 */
+}
+
+.background {
+    position: fixed; /* 固定定位，铺满整个视口 */
+    top: 0;
+    left: 0;
+    width: 100vw; /* 视口宽度 */
+    height: 100vh; /* 视口高度 */
+    background-image: url("../images/background.png"); /* 背景图片 */
+    background-size: cover; /* 图片等比缩放，覆盖区域 */
+    background-position: center; /* 图片居中 */
+    background-repeat: no-repeat; /* 不平铺 */
+    z-index: -1; /* 层级最低，防止遮挡内容 */
+    pointer-events: none; /* 不影响鼠标事件 */
+    opacity: 0.96; /* 可选：略微透明，提升内容可读性 */
 }
