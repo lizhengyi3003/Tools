@@ -7,38 +7,49 @@
     <meta name="description" content="飞船的工具箱，提供各种实用工具和资源，帮助用户更好地生活。"> <!-- 页面描述 -->
     <meta name="author" content="飞船团队"> <!-- 作者信息 -->
     <meta name="copyright" content="飞船团队版权所有"> <!-- 版权信息 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 移动端适配 -->
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css"> <!-- 引入主样式表 -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> 
+    <link rel="stylesheet" type="text/css" href="assets/css/global.css"> 
+    <link rel="stylesheet" type="text/css" href="assets/css/theme.css"> 
+    <link rel="stylesheet" type="text/css" href="assets/css/tools.css"> 
+    <link rel="stylesheet" type="text/css" href="assets/css/master.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/navigationbar.css">  
+    <link rel="stylesheet" type="text/css" href="assets/css/form.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/mend.css">  
+    <link rel="stylesheet" type="text/css" href="assets/css/print.css"> 
+    <link rel="stylesheet" type="text/css" href="assets/css/master.css">
 </head>
 <body>
-    <div class="background"></div> <!-- 全屏背景图片 -->
+    <div class="background-video">
+        <video autoplay loop muted>
+            <source src="assets/videos/shenlilinghua.mp4" type="video/mp4"> <!-- 背景视频 -->
+        </video>
+    </div>
     <nav> <!-- 导航栏区域 -->
-        <a href="pages/login.html">登录</a>
-        <a href="#">【待添加链接】注册</a>
+        <a href="pages/login.html" class="navigation-bar" id="log-in">登录</a>
+        <a href="pages/register.html" class="navigation-bar" id="register">注册</a>
     </nav>
     <main> <!-- 主体内容区域 -->
-        <h1 class="one"><strong>飞船的工具箱</strong></h1> <!-- 页面主标题 -->
-        <div class="one"><hr/></div> <!-- 分割线 -->
-        <div class="one">
-            <table>
-                <caption>工具列表</caption> <!-- 表格标题 -->
-                <thead>
-                    <tr>
-                        <th><a href="#">【待添加链接】高级计算器</a></th>
-                        <th><a href="#">【待添加链接】单位转换</a></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><div class="images1"><img src="assets/images/calculator.png" alt="计算器图标" title="计算器"></div></td>
-                        <td><div class="images1"><img src="assets/images/unitconversion.png" alt="单位转换图标" title="单位转换"></div></td>
-                    </tr>
-                    <tr>
-                        <td>显示界面简洁</td>
-                        <td>支持多种单位</td>
-                    </tr>
-                </tbody>
-            </table>
+        <h1 class="tools"><strong>飞船的工具箱</strong></h1> <!-- 页面主标题 -->
+        <hr class="tools-cut-off"/> <!-- 分割线 -->
+        <div class="tools-tool">
+            <h3>工具列表</h3>
+            <div id="tools-tool-content">
+                <div id="tools-tool-advanced-calculator">
+                    <h4>高级计算器</h4>
+                    <img class="images1" src="assets/images/calculator.png" alt="计算器图标" title="计算器">
+                    <h5>显示界面简洁</h5>
+                </div>
+                <div id="tools-tool-unit-conversion">
+                    <h4>单位转换</h4>
+                    <img class="images1" src="assets/images/unitconversion.png" alt="单位转换图标" title="单位转换">
+                    <h5>支持多种单位</h5>
+                </div>
+                <div id="tools-tool-AI-marking">
+                    <h4>AI改卷</h4>
+                    <img class="images1" src="assets/images/AImarking.png" alt="AI改卷图标" title="AI改卷">
+                    <h5>智能批改试卷</h5>
+                </div>
+            </div>
         </div>
     </main>
 </body>
