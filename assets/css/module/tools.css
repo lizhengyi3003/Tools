@@ -1,0 +1,47 @@
+/* ===================== 工具区主标题样式 ===================== */
+.tools {
+    text-align: center; /* 居中显示主标题 */
+}
+/* ===================== 分割线样式 ===================== */
+.tools-cut-off {
+    width: 400px; /* 分割线宽度 */
+    margin: 0 auto; /* 居中 */
+}
+/* ===================== 工具区整体样式 ===================== */
+.tools-tool {
+    color: aqua; /* 主题色 */
+    text-align: center;
+}
+/* ===================== 工具卡片容器 ===================== */
+#tools-tool-content {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* 卡片间距 */
+}
+/* ===================== 工具卡片图片 ===================== */
+.images1 {
+    width: 100px;  /* 工具图标宽度 */
+    height: 100px; /* 工具图标高度 */
+    display: block;
+    margin: 0 auto 10px auto; /* 居中并与下方留间距 */
+}
+/* ===================== 工具卡片样式 ===================== */
+.tool-card {
+    width: 150px;
+    height: 225px;
+    border-radius: 15px;
+    border: 1px solid aqua;
+    background-color: rgba(255, 255, 255, 0.25); /* 半透明背景 */
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.25); /* 轻微阴影 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+.tool-card:hover {
+    transform: translateY(-5px) scale(1.05); /* 悬停微动效 */
+    box-shadow: 6px 6px 20px rgba(0,0,0,0.50);
+}

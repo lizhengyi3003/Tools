@@ -1,3 +1,4 @@
+/* ===================== 字体引入 ===================== */
 @font-face {
     font-family: '悄悄喜欢你'; /* 自定义字体 */
     src: url("../fonts/悄悄喜欢你.ttf") format("truetype");
@@ -6,23 +7,29 @@
     font-family: '小可奶酪体'; /* 另一种自定义字体 */
     src: url("../fonts/小可奶酪体.ttf") format("truetype");
 }
+
 body {
-    font-family: '悄悄喜欢你', Arial, sans-serif; /* 设置主字体，增加英文/系统字体兜底 */
+    font-family: '悄悄喜欢你', Arial, sans-serif; /* 设置主字体，增加英文字体兜底 */
 }
+/* ===================== 背景视频容器 ===================== */
 .background-video {
     position: fixed;
-    top: 0;           /* 新增，确保左上角对齐 */
-    left: 0;          /* 新增，确保左上角对齐 */
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    overflow: hidden;
-}
-.background-video video {
-    position: absolute;   /* 新增，确保视频绝对定位于容器内 */
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    object-fit: cover;    /* 保证视频等比铺满并居中 */
+    z-index: -1; /* 更小的负值，确保始终在最底层 */
+    overflow: hidden;
+}
+/* ===================== 背景视频本体 ===================== */
+.background-video video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* 保证视频等比铺满并居中 */
+    z-index: -1;
+    margin: 0;
+    padding: 0;
 }

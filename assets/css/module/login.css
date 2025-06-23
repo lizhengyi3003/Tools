@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.login {
+    width: 300px;
+    height: 400px;
+    background: rgba(255,255,255,0.75);
+    border-radius: 15px;
+    border: 2px solid aqua;
+    box-shadow: 5px 5px 25px rgba(0,0,0,0.2);
+    padding: 40px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login-topic {
+    margin-top: 0;
+    margin-bottom: 35px;
+    color: #00bcd4;
+    letter-spacing: 2px;
+    position: relative;
+    top: -20px;
+}
+.login-form {
+    color: #333;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.login-form input[type="text"],.login-form input[type="password"] {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-left: 5px;
+    flex: 1;
+    min-width: 0;
+}
+.login-form input[type="submit"] {
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-top: 5px;
+    transition: background 0.2s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login-form input[type="submit"]:hover {
+    background: #0097a7;
+}
+.login-forget {
+    margin-top: 10px;
+    color: #666;
+}
+.login-register {
+    margin-top: 1px;
+    color: #666;
+}
+.login-forget a, .login-register a {
+    color: #00bcd4;
+    text-decoration: none;
+    margin-left: 4px;
+}
+.login-forget a:hover, .login-register a:hover {
+    text-decoration: underline;
+}
