@@ -1,54 +1,55 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- 文档类型声明，HTML5 -->
 <html lang="zh-CN"> <!-- 设置页面语言为中文 -->
-    <head>
+    <head> <!-- 头部区域开始 -->
         <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
-        <title>飞船的工具箱</title> <!-- 网页标题 -->
-        <meta name="keywords" content="飞船, 工具箱, 工具, 资源"> <!-- 关键词，利于SEO -->
-        <meta name="description" content="飞船的工具箱，提供各种实用工具和资源，帮助用户更好地生活。"> <!-- 页面描述 -->
-        <meta name="author" content="飞船团队"> <!-- 作者信息 -->
-        <meta name="copyright" content="飞船团队版权所有"> <!-- 版权信息 -->
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> 
-        <link rel="stylesheet" type="text/css" href="assets/css/global.css"> 
-        <link rel="stylesheet" type="text/css" href="assets/css/theme.css"> 
-        <link rel="stylesheet" type="text/css" href="assets/css/module/tools.css"> 
-        <link rel="stylesheet" type="text/css" href="assets/css/master.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/navigationbar.css">  
-        <link rel="stylesheet" type="text/css" href="assets/css/form.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/mend.css">  
-        <link rel="stylesheet" type="text/css" href="assets/css/print.css"> <!-- 样式表引入顺序：reset > global > theme > 业务相关 > 组件 > 打印 -->
-    </head>
-    <body>
-        <div class="background-video"><!-- 背景视频区域，使用 object-fit: cover 保证全屏自适应 -->
-            <video autoplay loop muted>
-                <source src="assets/videos/shenlilinghua.mp4" type="video/mp4"> <!-- 背景视频 -->
+        <title>飞船的工具箱</title> <!-- 设置网页标题 -->
+        <meta name="keywords" content="飞船, 工具箱, 工具, 资源"> <!-- 设置关键词，利于SEO -->
+        <meta name="description" content="飞船的工具箱，提供各种实用工具和资源，帮助用户更好地生活。"> <!-- 设置页面描述 -->
+        <meta name="author" content="飞船团队"> <!-- 设置作者信息 -->
+        <meta name="copyright" content="飞船团队版权所有"> <!-- 设置版权信息 -->
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> <!-- 引入reset样式表，重置浏览器默认样式 -->
+        <link rel="stylesheet" type="text/css" href="assets/css/global.css"> <!-- 引入全局样式表 -->
+        <link rel="stylesheet" type="text/css" href="assets/css/theme.css"> <!-- 引入主题样式表 -->
+        <link rel="stylesheet" type="text/css" href="assets/css/module/tools.css"> <!-- 引入工具模块样式表 -->
+        <link rel="stylesheet" type="text/css" href="assets/css/master.css"> <!-- 引入主样式表 -->
+        <link rel="stylesheet" type="text/css" href="assets/css/navigationbar.css"> <!-- 引入导航栏样式表 -->
+        <link rel="stylesheet" type="text/css" href="assets/css/form.css"> <!-- 引入表单样式表 -->
+        <link rel="stylesheet" type="text/css" href="assets/css/mend.css"> <!-- 引入补充样式表 -->
+        <link rel="stylesheet" type="text/css" href="assets/css/print.css"> <!-- 引入打印样式表，样式表引入顺序：reset > global > theme > 业务相关 > 组件 > 打印 -->
+    </head> <!-- 头部区域结束 -->
+    <body> <!-- 页面主体开始 -->
+        <div class="background-video"> <!-- 背景视频区域，使用object-fit: cover保证全屏自适应 -->
+            <video autoplay loop muted> <!-- 自动播放、循环、静音的视频 -->
+                <source src="assets/videos/shenlilinghua.mp4" type="video/mp4"> <!-- 设置视频源 -->
             </video>
         </div>
-        <nav> <!-- 顶部导航栏，flex 布局，按钮可点击整个区域 -->
-            <a href="pages/login.html" class="navigation-bar" id="log-in">登录</a>
-            <a href="pages/register.html" class="navigation-bar" id="register">注册</a>
+        <nav> <!-- 顶部导航栏，使用flex布局，按钮可点击整个区域 -->
+            <a href="pages/login.html" class="navigation-bar" id="log-in">登录</a> <!-- 登录按钮，跳转到登录页面 -->
+            <a href="pages/register.html" class="navigation-bar" id="register">注册</a> <!-- 注册按钮，跳转到注册页面 -->
         </nav>
-        <main> <!-- 主体内容区域 -->
+        <main> <!-- 主体内容区域开始 -->
             <h1 class="tools"><strong>飞船的工具箱</strong></h1> <!-- 页面主标题 -->
             <hr class="tools-cut-off"/> <!-- 分割线 -->
-            <div class="tools-tool">
-                <h2>工具列表</h2>
-                <div id="tools-tool-content">
-                <div id="tools-tool-advanced-calculator" class="tool-card"><!-- 工具卡片：高级计算器 -->
-                    <h4>高级计算器</h4>
-                    <img class="images1" src="assets/images/calculator.png" alt="计算器图标" title="计算器">
-                    <h5>显示界面简洁</h5>
-                </div>
-                <div id="tools-tool-unit-conversion" class="tool-card"><!-- 工具卡片：单位转换 -->
-                    <h4>单位转换</h4>
-                    <img class="images1" src="assets/images/unitconversion.png" alt="单位转换图标" title="单位转换">
-                    <h5>支持多种单位</h5>
-                </div>
-                <div id="tools-tool-AI-marking" class="tool-card"><!-- 工具卡片：AI改卷 -->
-                    <h4>AI改卷</h4>
-                    <img class="images1" src="assets/images/AImarking.png" alt="AI改卷图标" title="AI改卷">
-                    <h5>智能批改试卷</h5>
+            <div class="tools-tool"> <!-- 工具列表区域 -->
+                <h2>工具列表</h2> <!-- 工具列表标题 -->
+                <div id="tools-tool-content"> <!-- 工具卡片容器 -->
+                    <div id="tools-tool-advanced-calculator" class="tool-card"> <!-- 工具卡片：高级计算器 -->
+                        <h4>高级计算器</h4> <!-- 工具名称 -->
+                        <img class="images1" src="assets/images/calculator.png" alt="计算器图标" title="计算器"> <!-- 工具图标 -->
+                        <h5>显示界面简洁</h5> <!-- 工具描述 -->
+                    </div>
+                    <div id="tools-tool-unit-conversion" class="tool-card"> <!-- 工具卡片：单位转换 -->
+                        <h4>单位转换</h4> <!-- 工具名称 -->
+                        <img class="images1" src="assets/images/unitconversion.png" alt="单位转换图标" title="单位转换"> <!-- 工具图标 -->
+                        <h5>支持多种单位</h5> <!-- 工具描述 -->
+                    </div>
+                    <div id="tools-tool-AI-marking" class="tool-card"> <!-- 工具卡片：AI改卷 -->
+                        <h4>AI改卷</h4> <!-- 工具名称 -->
+                        <img class="images1" src="assets/images/AImarking.png" alt="AI改卷图标" title="AI改卷"> <!-- 工具图标 -->
+                        <h5>智能批改试卷</h5> <!-- 工具描述 -->
+                    </div>
                 </div>
             </div>
-        </main>
-    </body>
-</html>
+        </main> <!-- 主体内容区域结束 -->
+    </body> <!-- 页面主体结束 -->
+</html> <!-- HTML文档结束 -->

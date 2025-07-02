@@ -1,0 +1,44 @@
+<!DOCTYPE html> <!-- 文档类型声明，HTML5 -->
+<html lang="zh-CN"> <!-- 设置页面语言为中文 -->
+    <head> <!-- 头部区域开始 -->
+        <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+        <title>管理后台</title> <!-- 设置网页标题 -->
+        <link rel="stylesheet" type="text/css" href="../assets/css/reset.css"> <!-- 引入reset样式表，重置浏览器默认样式 -->
+        <link rel="stylesheet" type="text/css" href="../assets/css/global.css"> <!-- 引入全局样式表 -->
+        <link rel="stylesheet" type="text/css" href="../assets/css/theme.css"> <!-- 引入主题样式表 -->
+        <link rel="stylesheet" type="text/css" href="../assets/css/module/admin.css"> <!-- 引入管理后台模块样式表 -->
+        <link rel="stylesheet" type="text/css" href="../assets/css/master.css"> <!-- 引入主样式表 -->
+        <link rel="stylesheet" type="text/css" href="../assets/css/navigationbar.css"> <!-- 引入导航栏样式表 -->
+        <link rel="stylesheet" type="text/css" href="../assets/css/form.css"> <!-- 引入表单样式表 -->
+        <link rel="stylesheet" type="text/css" href="../assets/css/mend.css"> <!-- 引入补充样式表 -->
+        <link rel="stylesheet" type="text/css" href="../assets/css/print.css"> <!-- 引入打印样式表，样式表引入顺序：reset > global > theme > 业务相关 > 组件 > 打印 -->
+        <script src="../assets/js/admin.js"></script> <!-- 引入管理后台的JavaScript文件 -->
+    </head> <!-- 头部区域结束 -->
+    <body> <!-- 页面主体开始 -->
+        <div class="admin-title"> <!-- 管理后台标题区域 -->
+            <h1>飞船的管理后台</h1> <!-- 页面主标题 -->
+        </div>
+        <div class="admin-content"> <!-- 管理后台内容区域 -->
+            <div class="admin-menu"> <!-- 管理后台菜单区域 -->
+                <h2 onclick="showSection(0)">用户管理</h2> <!-- 用户管理菜单项 -->
+                <h2 onclick="showSection(1)">数据管理</h2> <!-- 数据管理菜单项 -->
+                <h2 onclick="showSection(2)">系统设置</h2> <!-- 系统设置菜单项 -->
+                <h2 onclick="showSection(3)">日志查看</h2> <!-- 日志查看菜单项 -->
+                <h2 onclick="showSection(4)">权限管理</h2> <!-- 权限管理菜单项 -->
+                <h2 onclick="showSection(5)">工具管理</h2> <!-- 工具管理菜单项 -->
+                <h2 onclick="showSection(6)">反馈处理</h2> <!-- 反馈处理菜单项 -->
+                <h2 onclick="showSection(7)">统计报表</h2> <!-- 统计报表菜单项 -->
+            </div>
+            <div class="admin-sections"> <!-- 管理后台各功能区 -->
+                <div class="admin-section">这里是用户管理的内容。</div> <!-- 用户管理内容区 -->
+                <div class="admin-section">这里是数据管理的内容。</div> <!-- 数据管理内容区 -->
+                <div class="admin-section">这里是系统设置的内容。</div> <!-- 系统设置内容区 -->
+                <div class="admin-section">这里是日志查看的内容。</div> <!-- 日志查看内容区 -->
+                <div class="admin-section">这里是权限管理的内容。</div> <!-- 权限管理内容区 -->
+                <div class="admin-section">这里是工具管理的内容。</div> <!-- 工具管理内容区 -->
+                <div class="admin-section">这里是反馈处理的内容。</div> <!-- 反馈处理内容区 -->
+                <div class="admin-section">这里是统计报表的内容。</div> <!-- 统计报表内容区 -->
+            </div>
+        </div>
+    </body> <!-- 页面主体结束 -->
+</html> <!-- HTML文档结束 -->
