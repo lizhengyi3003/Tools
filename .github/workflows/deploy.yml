@@ -16,4 +16,4 @@ jobs:
         with:
           site: "tools-liam"
           build: ""
-          outdir: "E:\Project\Tools"
+          outdir: "G:\\Project\\Tools"
